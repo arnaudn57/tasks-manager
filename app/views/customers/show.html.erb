@@ -1,0 +1,12 @@
+<h2 class="text-center">Show du client</h2>
+
+<div class="container">
+    <div class="bg-primary">
+        <h3><%= @customer.name %></h3>
+        <textarea><%= @customer.description %></textarea>
+        <%= link_to 'Retour', company_customers_path(@company), class: 'btn btn-primary' %>
+    </div>
+
+
+
+<%# PROJECT %>
