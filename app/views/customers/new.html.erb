@@ -1,0 +1,9 @@
+<h2 class="text-center">Création d'une fiche client</h2>
+
+<div class="container">
+    <%= simple_form_for [@company, @customer] do |f| %>
+        <%= f.input :name %>
+        <%= f.input :description %>
+        <%= f.button :submit %>
+    <% end %>
+</div>

@@ -1,0 +1,13 @@
+<h2 class="text-center">Index de tous les clients</h2>
+<%= link_to 'Ajouter un nouveau client', new_company_customer_path, class: 'btn btn-primary' %>
+
+
+<div class="container d-flex gap-4">
+    <% @customers.each do |customer| %>
+            <div class="bg-primary">
+                <h3><%= customer.name %></h3>
+                <p><%= customer.description %></p>
+                <%= link_to 'Voir', company_customer_path(customer.company_id, customer), class: 'btn btn-primary' %>
+            </div>
+    <% end %>
+</div>
